@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Using the class attribute in Javascript</h2>
+        <p>Click the button to hide all the elements with the name city</p>
+
+        <button onclick="myfunction()">Hide elements</button>
+
+        <h2 class="city">Nairobi</h2>
+        <p>This is the capital city.</p>
+        <h2 class="city">Mombasa</h2>
+        <p>This is the sea port</p>
+        <h2 class="city">Kisumu</h2>
+        <p>This is the lake port</p>
+
+        <script>
+            function myfunction(){
+                var x=document.getElementsByClassName('city');
+                for (var i=0;i<x.length;i++){
+                    x[i].style.display='none';
+                }
+            }
+        </script>
+    </body>
+</html>
