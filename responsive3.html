@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        
+    </head>
+    <body>
+        
+        <h1>show different images depending on browser width</h1>
+        <p>Resize the browser width and the image will change at 600px and 1500px</p>
+
+        <picture>
+            <source srcset="maize.jpg" media="(max-width:600px)">
+            <source srcset="puppy.jpg" media="(max-width:1500px)">
+            <source srcset="cheetah">
+            <img src="landscape.jpg" alt="landscape" style="width: auto;">
+        </picture>
+    </body>
+</html>
