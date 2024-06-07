@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <form action="" target="_blank" method="post" autocomplete="on">   <!--use post if the form contains sensitive data-->
+            <label for="fname">FirstName</label> <br>
+            <input type="text" id="fname" name="fname">  <br>
+            <label for="lname">LastName</label>  <br>
+            <input type="text" id="lname" name="lname">
+
+            <input type="submit" value="Submit">   <br> <br>  <br>
+        </form>
+
+        <!--The select element defines a dropdown menu-->
+        <form action="">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+
+            <input type="submit">
+        </form>    <br>  <br> <br>
+
+        <!--Specifying the number of visible values-->
+        <form action="">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" size="3">
+                <option value="volvo">Volvo</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+
+            <input type="submit">
+        </form>  <br>  <br>
+
+
+        <!--use multiple to allow the user to select multiple choices-->
+        <form action="">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" size="4" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+
+            <input type="submit">
+        </form> <br> <br>
+
+        <!--the button-->
+
+        <button type="button" onclick="alert('Hello World!')">Click Me</button>
+
+    </body>
+</html>
