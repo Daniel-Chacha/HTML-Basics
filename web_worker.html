@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Web worker is a javascript that runs in the background of a webpage, without interfering with the performance of the page.-->
+<html>
+    <body>
+        <p>Count Numbers: <output id="results"></output></p>
+        <button onclick="startworker()">Start Worker</button>
+        <button onclick="stopworker()">Stop Worker</button>
+
+        <script>
+            var w;
+
+            function startworker(){
+                if (typeof(Worker)!=="undefined"){
+                    if(typeof(w) == "undefined"){
+                        w= new Worker('demo_workers.js');
+                    }
+                    w.onmessage=function(event){
+                        document.getElementById('results').innerHTML= event.data;
+                    };
+                }else {
+                    document.getElementById('results').innerHTML='Sorry! No web worker support.';
+                }
+            }
+
+            function stopworker(){
+                if (w){
+                    w.terminate();
+                    w=undefined;
+                }
+               
+            }
+        </script>
+    </body>
+</html>

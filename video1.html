@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <video width="320" height="240" controls>   /*In place of controls, use autoplay to start the video automatically or autoplay muted to....*/
+            <source src="movie.mp4" type="video/mp4">   
+        </video>
+
+        
+        <br> <br>  <br>
+
+
+        <div style="text-align: center;">
+            <button onclick="playpause()">Play/Pause</button>
+            <button onclick="makebig()">Big</button>
+            <button onclick="makesmall()">Small</button>
+            <button onclick="makenormal()">Normal</button>
+
+            <br> <br>
+            <video id="vida" src="mov_bbb.mp4" width="420" ></video>
+        </div>
+
+        <script>
+            var myvideo=document.getElementById('vida');
+    
+            function playpause(){
+                if (myvideo.paused) myvideo.play();
+                else  
+                myvideo.pause();
+            }
+
+            function makebig(){
+                myvideo.width=560;
+            }
+    
+            function makesmall(){
+                myvideo.width=320;
+            }
+    
+            function makenormal(){
+                myvideo.width=420;
+            }
+        </script>
+
+        <p>Video Courtesy of  <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a></p>
+
+    </body>
+
+
+</html>
