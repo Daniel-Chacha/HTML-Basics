@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #borderimg{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(maize.jpg)30 round;
+            }
+            #borderimg1{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(maize.jpg)30 stretch;
+            }
+            #borderimg2{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(maize.jpg)50 round;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The border image property</h1>
+        <p>Here, the middle sections of the image are repeated to create the border:</p>
+        <p id="borderimg">Border image:url(border.png) 30 round</p>
+
+        <p id="borderimg1">Border image:url(border.png) 30 stretch</p>
+
+        <p id="borderimg2">Border image:url(border.png) 50 round</p>
+    </body>
+</html>

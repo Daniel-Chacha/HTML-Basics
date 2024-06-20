@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #grad1{
+                height: 300px;
+                width: 400px;
+                background-color: red; /*For browsers that do not support gradients*/
+                background-image: radial-gradient(red,yellow,green);
+            }
+            #grad2{
+                height: 300px;
+                width: 400px;
+                background-color: red; /*For browsers that do not support gradients*/
+                background-image: radial-gradient(circle,red 5%,yellow 15%,green 60% );
+            }
+            #grad3{
+                height: 300px;
+                width: 400px;
+                background-color: red; /*For browsers that do not support gradients*/
+                background-image: repeating-radial-gradient(red, yellow 10%, green 15%)
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grad1">
+            <h1>Radial Gradient- Evenly spaced color stops</h1>
+        </div>
+
+        <div id="grad2">
+            <h1>Radial Gradient- unevenly spaced color stops</h1>
+        </div>
+
+        <div id="grad3">
+            <h1>Radial Gradient- repeating</h1>
+        </div>
+    </body>
+</html>

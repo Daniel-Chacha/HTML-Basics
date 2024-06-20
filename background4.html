@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #example1{
+                border: 10px dotted black;
+                padding: 35px;
+                background: yellow;
+            }
+
+            #example2{
+                border: 10px dotted black;
+                padding: 35px;
+                background: yellow;
+                background-clip: padding-box;
+            }
+
+            #example3{
+                border: 10px dotted black;
+                padding: 35px;
+                background: yellow;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The background-clip property</h1>
+
+        <p>No background-clip(border-box is default): </p>
+        <div id="example1">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ex, neque minima voluptatem reiciendis quas, molestias pariatur illo officiis inventore nulla corrupti sed numquam et, aliquid incidunt ea. Sunt, repellat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea delectus fugit minima voluptatum quod vitae atque libero debitis repellat ullam reprehenderit voluptate quam ipsam iure, est quaerat earum nulla.</p>
+        </div>
+
+        <p>background-clip: padding-box:</p>
+        <div id="example2">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium culpa impedit possimus, iusto dolore illo iste obcaecati quisquam quae aliquam facilis atque minima dolorem omnis aperiam iure! Porro, blanditiis distinctio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore accusantium deserunt voluptatibus dignissimos quaerat libero facilis, consectetur possimus? Qui cupiditate distinctio ipsa accusamus, saepe adipisci ipsum vel expedita cum?</p>
+        </div>
+
+        <p>background-clip:content-box:</p>
+        <div id="example3">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, officiis? Quibusdam nesciunt quidem fugit corrupti suscipit enim! A optio laboriosam aspernatur maiores, molestiae ipsam exercitationem, harum provident consequuntur ratione cupiditate!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, quia magni maiores iure voluptatem voluptates, ducimus delectus, inventore blanditiis minima reiciendis fugit facere nam! Perferendis, sunt? Neque blanditiis aspernatur facere.</p>
+        </div>
+    </body>
+</html>
