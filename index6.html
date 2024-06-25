@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <style>
+            body{
+                margin: 0;
+            }
+            .header{
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+            }
+            .topnav{
+                width: 50%;
+                overflow: hidden;
+                background-color: #333;
+                padding: 15px;
+               
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 15px 30px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+
+            .column{
+                float: left;
+                width: 22.5%;
+                padding: 15px;
+                text-align: justify;
+            }
+
+            /* clear floats after the columns*/
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /*Responsive layout - makes the rows stack over each other in small screens*/
+            @media screen and (max-width:600px) {
+                .column{
+                    width: 100%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+            <a href="#link4">Link 4</a>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi delectus velit eum voluptate modi dolorum, voluptates distinctio molestiae suscipit repellendus illo, quaerat impedit, aspernatur eligendi quisquam ab odio architecto! Voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit obcaecati saepe, non velit laborum magnam possimus assumenda laudantium voluptate! Officiis libero quam in voluptates accusamus necessitatibus doloremque itaque. Totam, cupiditate?</p>
+            </div>
+
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil magnam voluptatem vitae illum eos sit veritatis maxime natus reprehenderit accusamus exercitationem, aperiam facere eaque quibusdam at neque, quis deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odio recusandae velit labore adipisci nesciunt, tempora minus voluptate saepe possimus repudiandae dolore laboriosam perspiciatis ipsa fugit quibusdam. Commodi, sapiente nulla.</p>
+            </div>
+
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur autem officiis laboriosam esse id laudantium reiciendis dolores, voluptas eos sit facilis. Saepe quas nemo perspiciatis quis laudantium possimus repellat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quis inventore suscipit, exercitationem incidunt nihil, ex debitis ad perspiciatis excepturi amet, sit vitae magni voluptatum aliquid nemo quasi. Magni, expedita.</p>
+            </div>
+
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur autem officiis laboriosam esse id laudantium reiciendis dolores, voluptas eos sit facilis. Saepe quas nemo perspiciatis quis laudantium possimus repellat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quis inventore suscipit, exercitationem incidunt nihil, ex debitis ad perspiciatis excepturi amet, sit vitae magni voluptatum aliquid nemo quasi. Magni, expedita.</p>
+            </div>
+        </div>
+    </body>
+</html>

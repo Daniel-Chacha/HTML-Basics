@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .header{
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .topnav{
+                overflow: hidden;
+                background-color: #333;
+                
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                text-decoration: none;
+                padding: 25px ;
+            }
+
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* three unequal columns that float next to each other*/
+            .column{
+                float: left;
+                padding: 10px;
+            }
+
+            .column.side{
+                width: 25%;
+            }
+
+            .column.middle{
+                width: 50%;
+            }
+
+            .column.side{
+                width: 25%;
+            }
+
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width: 600px) {
+                .column.side, .column.middle{
+                    width: 100%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+
+        <div class="row">
+            <div class="column side">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque fuga provident non quasi accusantium omnis doloribus optio quod eum alias consequuntur assumenda commodi impedit iste, excepturi ad veritatis fugit eligendi.</p>
+            </div>
+
+            <div class="column middle">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, alias optio mollitia temporibus, ab animi cupiditate quis illum ratione ut natus quod qui labore corrupti reiciendis, recusandae ipsum quas officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est odit laboriosam dignissimos porro reiciendis quas ab alias ea distinctio expedita et sequi vitae optio, quos iusto beatae incidunt cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate corrupti ullam, id error deserunt optio quaerat voluptates expedita veniam repellendus doloribus est consectetur maiores eos modi? Perspiciatis, similique ratione. </p>
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, itaque. Pariatur sapiente doloribus beatae! Rerum enim, modi voluptatem exercitationem eum ducimus. Facilis, aliquid excepturi? Cumque iste rerum animi soluta commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, fugit. Quasi, ut rerum voluptatibus iure molestias debitis iste cupiditate architecto ipsum expedita qui repellat reprehenderit laudantium magnam id quidem? Quae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi at saepe voluptatum, nobis nulla iure quis amet quod consequuntur officiis sequi autem provident adipisci enim voluptatem sapiente labore minus dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in minima harum porro cum temporibus consequuntur deleniti officia cumque earum voluptas, optio exercitationem assumenda blanditiis eaque, quidem culpa? At, aliquam.</p>
+            </div>
+
+            <div class="column side">
+                <h2>Side</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore totam illo quos magnam ab maiores veritatis excepturi, corporis voluptates vitae odit autem minima. Praesentium nam quis, nesciunt nobis laborum enim?</p>
+            </div>
+        </div>
+    </body>
+</html>
